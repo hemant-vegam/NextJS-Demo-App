@@ -32,7 +32,7 @@ export default function Page({children}){
                     <div className="flex justify-center">
                         <ul className="list-none flex overflow-x-auto">
                         {profileSetting.map((d,i) => 
-                                <li><Link key={i} href={`/profile/${d.href}`} className="p-2 w-full inline-flex hover:bg-gray-200 transition-all">{d.text}</Link></li>
+                                <li key={i}><Link href={`/profile/${d.href}`} className="p-2 w-full inline-flex hover:bg-gray-200 transition-all">{d.text}</Link></li>
                         )}
                         </ul>
                     </div>
@@ -44,7 +44,7 @@ export default function Page({children}){
                     </div>
                     <ul className="list-none">
                        {profileSetting.map((d,i) => 
-                            <li><Link key={i} href={`/profile/${d.href}`} className="p-2 w-full inline-flex hover:bg-gray-200 transition-all">{d.text}</Link></li>
+                            <li key={i}><Link href={`/profile/${d.href}`} className="p-2 w-full inline-flex hover:bg-gray-200 transition-all">{d.text}</Link></li>
                        )}
                     </ul>
                 </div>
