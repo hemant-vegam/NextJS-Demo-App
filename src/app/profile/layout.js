@@ -31,8 +31,8 @@ export default function Page({children}){
                     </div>
                     <div className="flex justify-center">
                         <ul className="list-none flex overflow-x-auto">
-                        {profileSetting.map((d) => 
-                                <li><Link href={`/profile/${d.href}`} className="p-2 w-full inline-flex hover:bg-gray-200 transition-all">{d.text}</Link></li>
+                        {profileSetting.map((d,i) => 
+                                <li><Link key={i} href={`/profile/${d.href}`} className="p-2 w-full inline-flex hover:bg-gray-200 transition-all">{d.text}</Link></li>
                         )}
                         </ul>
                     </div>
@@ -43,8 +43,8 @@ export default function Page({children}){
                         <h1 className="text-xl font-bold my-3">Leanne Graham</h1>
                     </div>
                     <ul className="list-none">
-                       {profileSetting.map((d) => 
-                            <li><Link href={`/profile/${d.href}`} className="p-2 w-full inline-flex hover:bg-gray-200 transition-all">{d.text}</Link></li>
+                       {profileSetting.map((d,i) => 
+                            <li><Link key={i} href={`/profile/${d.href}`} className="p-2 w-full inline-flex hover:bg-gray-200 transition-all">{d.text}</Link></li>
                        )}
                     </ul>
                 </div>
