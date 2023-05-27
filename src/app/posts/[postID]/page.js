@@ -36,7 +36,7 @@ export default async function Page({params}){
                 <h2 className="text-center font-bold text-xl my-2">Comments</h2>
             </div>
             <div className="p-4 bg-white">
-                {post.comments.map((comment) => <Comment comment={comment} />)}
+                {post.comments.map((comment,i) => <Comment key={i} comment={comment} />)}
             </div>
         </div>
     )
