@@ -1,7 +1,7 @@
 "use client";
+import Image from 'next/image';
 import Link from 'next/link'
 import { useState } from 'react';
-
 
 function Navbar(){
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -29,8 +29,8 @@ function Navbar(){
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img className="block h-8 scale-150 w-auto lg:hidden" src="https://img.freepik.com/free-vector/butterfly-logo-colorful-gradient-illustrations_483537-972.jpg?w=740&t=st=1685164419~exp=1685165019~hmac=dc4ed58678a1afe9bb52b359fe593b1cb62abac5345b7c1063d5ed26b99b0d86" alt="Your Company" />
-                  <img className="hidden h-8 scale-150 w-auto lg:block" src="https://img.freepik.com/free-vector/butterfly-logo-colorful-gradient-illustrations_483537-972.jpg?w=740&t=st=1685164419~exp=1685165019~hmac=dc4ed58678a1afe9bb52b359fe593b1cb62abac5345b7c1063d5ed26b99b0d86" alt="Your Company" />
+                  <Image className="block h-8 scale-150 w-auto lg:hidden" width={40} height={40} src={"https://img.freepik.com/free-vector/butterfly-logo-colorful-gradient-illustrations_483537-972.jpg?w=740&t=st=1685164419~exp=1685165019~hmac=dc4ed58678a1afe9bb52b359fe593b1cb62abac5345b7c1063d5ed26b99b0d86"} alt="Your Company" />
+                  <Image className="hidden h-8 scale-150 w-auto lg:block" width={40} height={40} src={"https://img.freepik.com/free-vector/butterfly-logo-colorful-gradient-illustrations_483537-972.jpg?w=740&t=st=1685164419~exp=1685165019~hmac=dc4ed58678a1afe9bb52b359fe593b1cb62abac5345b7c1063d5ed26b99b0d86"} alt="Your Company" />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -52,7 +52,7 @@ function Navbar(){
                 <div>
                   <Link href="/profile/account" className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                     <span className="sr-only">Open user menu</span>
-                    <img className="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                    <Image className="h-8 w-8 rounded-full" width={40} height={40} src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Image" />
                   </Link>
                 </div>
                 {/* <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex="-1">

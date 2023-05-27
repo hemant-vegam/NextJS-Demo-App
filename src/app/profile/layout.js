@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 const profileSetting = [
@@ -25,7 +26,7 @@ export default function Page({children}){
             <div className="grid grid-cols-12 gap-2">
                 <div className="md:hidden p-3 col-span-12 shadow-lg rounded-md border border-gray-200 self-start bg-white">
                     <div className="flex flex-col items-center justify-center mt-5">
-                        <img className="w-28 h-28 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" />
+                        <Image width={100} height={100} alt="profile-pic" className="w-28 h-28 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" />
                         <h1 className="text-xl font-bold my-3">Leanne Graham</h1>
                     </div>
                     <div className="flex justify-center">
@@ -38,7 +39,7 @@ export default function Page({children}){
                 </div>
                 <div className="hidden md:block p-3 col-span-3 shadow-lg rounded-md border border-gray-200 self-start bg-white">
                     <div className="flex flex-col items-center justify-center mt-5">
-                        <img className="w-28 h-28 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" />
+                        <Image width={100} height={100} alt="profile-pic" className="w-28 h-28 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" />
                         <h1 className="text-xl font-bold my-3">Leanne Graham</h1>
                     </div>
                     <ul className="list-none">
